@@ -1,3 +1,18 @@
-<a href="{{ path('resultGet') }}">Start Read Test</a>
-</br>
-<a href="{{ path('resultSet') }}">Start Write Test</a>
+{% extends "base.html.twig" %}
+{% block body %}
+
+<div class="container">
+    <div class="row align-items-center mt-5">
+        <div class="col">
+        </div>
+        <div class="col-8">
+            <a href="{{ path('resultGet') }}" class="btn btn-dark btn-lg btn-block">Start Read Test</a>
+            <a href="{{ path('resultSet') }}" class="btn btn-dark btn-lg btn-block">Start Write Test</a>
+        </div>
+        <div class="col">
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

@@ -12,4 +12,12 @@ cpu_usage() ) on write and read function in different way :
 - Text - [ ]
 - CSV (excel) - [ ]
 
+
+Current dataset use for read :
+
+    "LatestUser": [
+        {"UserName": "User1", "Party_ID": "0004"},
+        {"UserName": "User2", "Party_ID": "0005"}
+
+
 ![Maquette](/web/gitpics/capture.png)
