@@ -119,6 +119,9 @@ class MainTest {
                 $result = $this->Mysql->GetDataInMysql();
                 $endInfo = $this->EndTest();
                 
+                //log the Mysql content
+                $this->logger->info("Mysql content retrieve : ".$result);
+
                 return $this->ResultTest($startInfo, $endInfo, "Mysql");
                 break;
 
@@ -129,6 +132,9 @@ class MainTest {
                 $startInfo = $this->StartTest();
                 $result = $this->Text->GetDataInText();
                 $endInfo = $this->EndTest();
+
+                //log the text content
+                $this->logger->info("Text file content retrieve : ".$result);
                 
                 return $this->ResultTest($startInfo, $endInfo, "Text");
                 break;

@@ -3,7 +3,6 @@
 namespace AppBundle\Services;
 
 use Psr\Log\LoggerInterface;
-use Symfony\Component\Finder\Finder;
 use Symfony\Component\HttpKernel\KernelInterface;
 
 class Json{
@@ -18,7 +17,7 @@ class Json{
 
     public function GetDataInJson() {
 
-        $jsonpath = $this->kernel->getRootDir() . '/../web/bundles/AppBundle/Datasets/Datasets.json';        
+        $jsonpath = $this->kernel->getRootDir() . '/../app/Ressources/Datasets/Datasets.json';        
         $json = file_get_contents($jsonpath);
         $parsed_json = json_decode($json);
         return $parsed_json;

@@ -1,34 +1,6 @@
 {
-    "response": {
-        "version": "1.0"
-        ,"features": {
-        "date": "31/10/2017"
-        }
-    },
-    "latestUser": [
-        {
-            "User1": {
-            "UserName": "User1",
-            "Party_ID": "0004"
-            }
-        },
-        {
-            "User2": {
-            "UserName": "User2",
-            "Party_ID": "0005"
-            }
-        },
-        {
-            "User3": {
-            "UserName": "User3",
-            "Party_ID": "0006"
-            }
-        },
-        {
-            "User4": {
-            "UserName": "User4",
-            "Party_ID": "0007"
-            }
-        }   
+    "LatestUser": [
+    {"UserName": "User1", "Party_ID": "0004"},
+    {"UserName": "User2", "Party_ID": "0005"}
     ]
 }
