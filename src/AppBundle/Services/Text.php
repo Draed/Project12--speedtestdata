@@ -16,7 +16,7 @@ class Text{
     }
 
     public function GetDataInText() {
-        $TextFilePath = $this->kernel->getRootDir() . '/../app/Ressources/Datasets/Datasets.txt'; 
+        $TextFilePath = $this->kernel->getProjectDir() . '/web/bundles/AppBundle/Datasets/Datasets.txt';   
         $TextFile = fopen($TextFilePath, "r") or die("Unable to open file!");
         $TextfileReadable = fread($TextFile,filesize($TextFilePath));
         fclose($TextFile);

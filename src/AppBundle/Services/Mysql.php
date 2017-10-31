@@ -16,10 +16,11 @@ class Mysql{
         $this->doctrine = $doctrine;
     }
 
+    //data are already in the database with Fixture Bundle
+    //if not then launch $ php bin/console doctrine:fixtures:load
     public function GetDataInMysql(){
-        //data are already in the database with Fixture Bundle
-        //if not then launch $ php bin/console doctrine:fixtures:load
-        $repository = $this->getDoctrine()->getRepository(LatestUser::class);
+        
+        $repository = $this->doctrine->getRepository(LatestUser::class);
         $MysqlData = $repository->findAll();
         return $MysqlData;
     }

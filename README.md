@@ -7,9 +7,9 @@ Test the time execution and the CPU usage (with microtime() and
 cpu_usage() ) on write and read function in different way :
 
 - Cache - [ ] 
-- Mysql - [ ]
+- Mysql - [x]
 - Json - [x]
-- Text - [ ]
+- Text - [x]
 - CSV (excel) - [ ]
 
 

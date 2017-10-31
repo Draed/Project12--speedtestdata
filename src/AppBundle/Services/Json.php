@@ -17,7 +17,7 @@ class Json{
 
     public function GetDataInJson() {
 
-        $jsonpath = $this->kernel->getProjectDir() . '/app/Ressources/Datasets/Datasets.json';        
+        $jsonpath = $this->kernel->getProjectDir() . '/web/bundles/AppBundle/Datasets/Datasets.json';        
         $json = file_get_contents($jsonpath);
         $parsed_json = json_decode($json);
         return $parsed_json;

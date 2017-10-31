@@ -120,7 +120,14 @@ class MainTest {
                 $endInfo = $this->EndTest();
                 
                 //log the Mysql content
-                $this->logger->info("Mysql content retrieve : ".$result);
+                foreach ($result as $value) {
+                    $UserName = $value->getUsername();
+                    $PartyID = $value->getPartyId();
+                    $this->logger->info("Mysql Username retrieve : ".$UserName);
+                    $this->logger->info("Mysql party ID retrieve : ".$PartyID);
+                }
+                
+                
 
                 return $this->ResultTest($startInfo, $endInfo, "Mysql");
                 break;
